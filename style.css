@@ -1,0 +1,21 @@
+@import url('css/normalize.min.css');
+
+@import url('css/wp-styles.css');
+/*
+Theme Name: POWI
+Author: Daniel Sundy
+Author URI: http://dsundy.com
+Description: WordPress theme for the Project on Water Issues Website
+Version: 1.0
+Tags:
+
+*/
+/* =@imports
+/* -------------------------------------------------------------- */
+/*
+/*	Variables
+/*---------------------------------------------------------------------------------------- *//* =HTML
+/* -------------------------------------------------------------- */
+body {
+  font-size: 1em;
+}
