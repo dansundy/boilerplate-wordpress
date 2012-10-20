@@ -1,8 +1,8 @@
 /*
-Theme Name: Theme Name
+Theme Name: POWI
 Author: Daniel Sundy
 Author URI: http://dsundy.com
-Description: Desrcription
+Description: WordPress theme for the Project on Water Issues Website
 Version: 1.0
 Tags:
 
@@ -100,17 +100,20 @@ textarea {
   visibility: hidden;
 }
 
-.clearfix:after {
-	visibility: hidden;
-	display: block;
-	font-size: 0;
-	content: " ";
-	clear: both;
-	height: 0;
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
 }
 
-* html .clearfix             { zoom: 1; } /* IE6 */
-*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+.cf:after {
+    clear: both;
+}
+
+/* For IE 6/7 only */
+.cf {
+    *zoom: 1;
+}
 
 @media only screen and (min-width: 1140px) {
 
