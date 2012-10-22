@@ -1,5 +1,5 @@
 /*
-Theme Name: POWI
+Theme Name: WPBoiler
 Author: Daniel Sundy
 Author URI: http://dsundy.com
 Description: WordPress theme for the Project on Water Issues Website
@@ -114,6 +114,48 @@ textarea {
 .cf {
     *zoom: 1;
 }
+
+/* =Containers
+/* -------------------------------------------------------------- */
+
+.site-header, 
+.site-footer,
+#secondary {
+	border: 1px solid @base-dark;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+/*
+/*	WIDE
+/*---------------------------------------------------------------------------------------- */
+
+
+/* WIDE: Menu */
+
+  .title {
+    float: left;
+  }
+
+  nav {
+    float: right;
+    width: 38%;
+  }
+
+/* WIDE: Main */
+
+  .main article {
+    float: left;
+    width: 57%;
+  }
+
+  #secondary {
+    float: right;
+    width: 28%;
+  }
+}
+
 
 @media only screen and (min-width: 1140px) {
 
