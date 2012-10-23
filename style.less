@@ -1,16 +1,11 @@
 /*
-Theme Name: WPBoiler
+Theme Name: POWI
 Author: Daniel Sundy
 Author URI: http://dsundy.com
-Description: WordPress theme for the Project on Water Issues Website
+Description: WordPress theme for the Project on Water Issues Website.
 Version: 1.0
 Tags:
-
 */
-
-
-/* =@imports
-/* -------------------------------------------------------------- */
 
 @import url('css/normalize.min.css');
 @import url('css/wp-styles.css');
@@ -20,6 +15,7 @@ Tags:
 /* -------------------------------------------------------------- */
 
 body {
+	background: @base-light;
   font-size: 1em;
   line-height: 1.4;
 }
@@ -51,6 +47,11 @@ textarea {
 #page {
   width: 90%;
   margin: 0 5%;
+}
+
+menu, ul, ol {
+	list-style: none;
+	padding: 0;
 }
 
 /* =Classes
@@ -115,37 +116,119 @@ textarea {
     *zoom: 1;
 }
 
-/* =Containers
+/* =General
 /* -------------------------------------------------------------- */
 
 .site-header, 
 .site-footer,
 #secondary {
-	border: 1px solid @base-dark;
+}
+
+aside h1 {
+	font-size: 1.2em;
 }
 
 
-@media only screen and (min-width: 768px) {
+/*
+/*	MOBILE: Menu
+/*---------------------------------------------------------------------------------------- */
+
+.main-navigation ul {
+  margin: 0;
+  padding: 0;
+}
+
+.main-navigation a {
+  display: block;
+  margin-bottom: 10px;
+  padding: 15px 0;
+
+  text-align: center;
+  text-decoration: none;
+}
+
+/*
+/*	MOBILE: Main
+/*---------------------------------------------------------------------------------------- */
+
+.content-area {
+  padding: 30px 0;
+}
+
+.content-area article h1 {
+  font-size: 2em;
+}
+
+#secondary {
+  padding: 0px 5% 10px;
+}
+
+.site-footer {
+  padding: 20px 0;
+}
+
+/*
+/*	IE Fixes
+/*---------------------------------------------------------------------------------------- */
+
+.ie7 .title {
+  padding-top: 20px;
+}
+
+
+@media only screen and (min-width: 480px) {
+
+/* INTERMEDIATE: Menu */
+
+
+  .main-navigation a {
+    float: left;
+    margin-left: 1em;
+    padding: 25px 2%;
+    margin-bottom: 0;
+  }
+
+  .main-navigation li:first-child a {
+    margin-left: 0;
+  }
+
+  .main-navigation li:last-child a {
+    margin-right: 0;
+  }
+
+/* INTERMEDIATE: IE Fixes */
+
+  .main-navigation ul li {
+    display: inline;
+  }
+
+  .oldie .main-navigation a {
+    margin: 0 0.7%;
+  }
+}
+
+
 
 /*
 /*	WIDE
 /*---------------------------------------------------------------------------------------- */
 
+@media only screen and (min-width: 768px) {
 
 /* WIDE: Menu */
 
-  .title {
+  header hgroup {
     float: left;
   }
 
-  nav {
+  .main-navigation,
+  .main-navigation .menu {
     float: right;
-    width: 38%;
   }
 
 /* WIDE: Main */
 
-  .main article {
+  .content-area {
     float: left;
     width: 57%;
   }
@@ -157,12 +240,13 @@ textarea {
 }
 
 
-@media only screen and (min-width: 1140px) {
+
 
 /*
 /*	FULL SIZE
 /*---------------------------------------------------------------------------------------- */
 
+@media only screen and (min-width: 1140px) {
   #page {
     width: 1026px; /* 1140px - 10% for margins */
     margin: 0 auto;
