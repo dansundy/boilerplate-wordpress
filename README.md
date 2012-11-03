@@ -1,4 +1,8 @@
 Wordpress Boilerplate
 =====================
 
-A starting point for my WordPress based projects. To be used in conjunction with a starter theme like _s.
+A starting point for WordPress based projects. 
+
+Made up of parts of:
+
+HTML5Boilerplate; _s WordPress Starter theme; Initializr's responsive boilerplate; Twitter Bootstrap.
