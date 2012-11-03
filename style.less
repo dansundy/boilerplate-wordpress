@@ -161,7 +161,7 @@ aside h1 {
 }
 
 #secondary {
-  padding: 0px 5% 10px;
+  padding: 0 0 10px 2%;
 }
 
 .site-footer {
@@ -223,13 +223,27 @@ aside h1 {
 
   .content-area {
     float: left;
-    width: 57%;
+    width: 66%;
   }
 
   #secondary {
     float: right;
-    width: 28%;
+    width: 32%;
   }
+
+	/* WIDE: Footer */
+
+	.footer-widgets {
+		overflow: hidden;
+		.widget-area {
+			float: left;
+			margin: 0 0 20px 2%;
+			width: 32%;
+		}
+		.widget-area:first-child {
+			margin-left: 0;
+		}
+	}
 }
 
 
