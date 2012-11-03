@@ -72,14 +72,15 @@ add_action( 'after_setup_theme', 'WPBoiler_setup' );
  * @since WPBoiler 1.0
  */
 function WPBoiler_widgets_init() {
-	register_sidebar( array(
-		'name' => __( 'Sidebar', 'WPBoiler' ),
-		'id' => 'sidebar-1',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget' => '</aside>',
-		'before_title' => '<h1 class="widget-title">',
-		'after_title' => '</h1>',
-	) );
+	$sidebars = array('Sidebar', 'Footer 1', 'Footer 2', 'Footer 3');
+	foreach($sidebars as $sb) {
+		register_sidebar(array('name'=> $sb,
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget' => '</aside>',
+			'before_title' => '<h1 class="widget-title">',
+			'after_title' => '</h1>',
+		));
+	}
 }
 add_action( 'widgets_init', 'WPBoiler_widgets_init' );
 
