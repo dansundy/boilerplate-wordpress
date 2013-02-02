@@ -31,16 +31,18 @@
 
 	?></title>
 
-<!-- For third generation iPad Retina Display -->
+
+<!-- Apple Touch Icons -->
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/touch/apple-touch-icon-144x144-precomposed.png" />
-<!-- For iPhone 4 with high-resolution Retina display: -->
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/touch/apple-touch-icon-114x114-precomposed.png" />
-<!-- For first-generation iPad: -->
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/touch/apple-touch-icon-72x72-precomposed.png" />
-<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
 <link rel="apple-touch-icon-precomposed" href="img/touch/apple-touch-icon-57x57-precomposed.png" />
-<!-- For nokia devices: -->
 <link rel="shortcut icon" href="img/touch/apple-touch-icon.png" />
+
+<!-- Favicons -->
+<link href="favicon.ico" type="image/x-icon" rel="icon" />
+<link href="favicon.ico" type="image/x-icon" rel="shortcut icon" />
+
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <!--[if lt IE 9]>

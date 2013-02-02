@@ -8,4 +8,3 @@ Made up of parts of:
 * HTML5Boilerplate
 * _s WordPress Starter Theme 
 * Initializr's Responsive boilerplate
-* Twitter Bootstrap
