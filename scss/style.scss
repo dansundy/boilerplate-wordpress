@@ -1,57 +1,22 @@
-/*
-Theme Name: Theme Name
-Author: Daniel Sundy
-Author URI: http://dsundy.com
-Description: WordPress theme.
-Version: 1.0
-Tags:
-*/
+/* =Wordpress Requirements
+/*---------------------------------------------*/
 
-@import 'scss/normalize.scss';
-@import 'scss/wp-styles.scss';
-@import 'scss/_base.scss';
+@import 'style-header.scss';
+@import 'wp-styles.scss';
 
-/* =HTML
-/* -------------------------------------------------------------- */
 
-body {
-  font-size: 1em;
-  line-height: 1.4;
-}
+/* =Utilities
+/*---------------------------------------------*/
 
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
+@import '_utils/variables.scss';
+@import '_utils/mixins.scss';
+@import '_utils/typography.scss';
 
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
+/* =Partials
+/*---------------------------------------------*/
 
-img {
-  vertical-align: middle;
-}
+@import '_partials/base.scss';
 
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-textarea {
-  resize: vertical;
-}
-
-#page {
-  width: 90%;
-  margin: 0 5%;
-}
-
-menu, ul, ol {
-	list-style: none;
-	padding: 0;
-}
 
 /* =Classes
 /* -------------------------------------------------------------- */
