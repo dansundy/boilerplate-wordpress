@@ -56,10 +56,10 @@
 <div id="page" class="hfeed site">
 	<?php do_action( 'before' ); ?>
 	<header id="masthead" class="site-header cf" role="banner">
-		<hgroup>
+    <span class="hgroup">
 			<h1 class="site-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<h2 class="site-description visuallyhidden"><?php bloginfo( 'description' ); ?></h2>
-		</hgroup>
+    </span>
 		<nav role="navigation" class="site-navigation main-navigation cf">
 			<h1 class="assistive-text"><?php _e( 'Menu', 'wpboiler' ); ?></h1>
 			<div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'wpboiler' ); ?>"><?php _e( 'Skip to content', 'wpboiler' ); ?></a></div>

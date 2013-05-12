@@ -1,0 +1,17 @@
+/* =Media Query Naming
+/*---------------------------------------------*/
+
+@mixin breakpoint($point) {
+  // > 550px or 35em.
+  @if $point == medium {
+    @media (min-width: 35em) { @content; }
+  }
+  // > 850px or 53.123em.
+  @else if $point == large {
+    @media (min-width: 53.125em) { @content; }
+  }
+  // > 1000px or 64em.
+  @else if $point == full {
+    @media (min-width: 64em)  { @content; }
+  }
+}

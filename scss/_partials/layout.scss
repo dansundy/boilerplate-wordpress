@@ -1,0 +1,78 @@
+/* =Page
+/*---------------------------------------------*/
+#page {
+  @include breakpoint(full) {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+/* =Header
+/*---------------------------------------------*/
+
+header .hgroup {
+  @include breakpoint(large) {
+    float: left;
+  }
+}
+
+/* =Main Navigation
+/*---------------------------------------------*/
+
+.main-navigation {
+  @include breakpoint(large) {
+    float: right;
+  }
+}
+
+.main-navigation ul {
+  margin: 0;
+  padding: 0;
+}
+
+.main-navigation a {
+  display: block;
+  margin-bottom: 10px;
+  padding: 15px 0;
+
+  text-align: center;
+  text-decoration: none;
+
+  @include breakpoint(medium) {
+    float: left;
+    margin-left: 1.5em;
+    padding: 1.4em 0;
+    margin-bottom: 0;
+  }
+}
+
+/* =Main Content
+/*---------------------------------------------*/
+
+.content-area {
+  padding: 30px 0;
+
+  @include breakpoint(large) {
+    float: left;
+    width: 66%;
+  }
+}
+
+/* =Sidebar
+/*---------------------------------------------*/
+
+#secondary {
+  padding: 0 0 10px 2%;
+
+  @include breakpoint(large) {
+    float: right;
+    width: 32%;
+  }
+}
+
+/* =Footer
+/*---------------------------------------------*/
+
+.site-footer {
+  padding: 20px 0;
+}

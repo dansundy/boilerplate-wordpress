@@ -1,0 +1,22 @@
+/* =Footer Widgets
+/*---------------------------------------------*/
+
+.footer-widgets {
+
+  @include breakpoint(large) {
+    overflow: hidden;
+  }
+    
+  .widget-area {
+    @include breakpoint(large) {
+      float: left;
+      margin: 0 0 20px 2%;
+      width: 32%;
+    }    
+  }
+  .widget-area:first-child {
+    @include breakpoint(large) {
+      margin-left: 0;
+    }    
+  }
+}
