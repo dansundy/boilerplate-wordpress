@@ -2,7 +2,8 @@
 /*---------------------------------------------*/
 
 @import 'style-header.scss';
-@import 'wp-styles.scss';
+@import 'compass';
+@import '_vendor/wp-styles.scss';
 
 
 /* =Utilities
@@ -20,4 +21,3 @@
 @import '_partials/layout.scss';
 @import '_partials/module.scss';
 @import '_partials/state.scss';
-@import '_partials/theme.scss';

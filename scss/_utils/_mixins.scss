@@ -2,9 +2,13 @@
 /*---------------------------------------------*/
 
 @mixin breakpoint($point) {
-  // > 550px or 35em.
+
+  @if $point == small {
+    @media (max-width: 40em) { @content; }
+  }
+
   @if $point == medium {
-    @media (min-width: 35em) { @content; }
+    @media (min-width: 40em) { @content; }
   }
   // > 850px or 53.123em.
   @else if $point == large {
